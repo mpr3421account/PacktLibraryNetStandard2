@@ -15,6 +15,7 @@ bob.Name = "Bob Smith";
 bob.DateOfBirth = new DateTime (1965,12,22);
 
 bob.BucketList =  WondersOfTheAncientWorld.HangingGardensOfBabylon  | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
+WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}");
 //bob.BucketList = (WondersOfTheAncientWorld)18;
 
 bob.Children.Add(new Person { Name = "Alfred" });//C# 3.0 and later
@@ -25,7 +26,7 @@ foreach(var child in bob.Children)
     WriteLine($"{child.Name}");
 }
 
-WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}");
+
 WriteLine(format: "{0} was born on {1:dddd, d MMMM yyyy}", arg0: bob.Name, arg1: bob.DateOfBirth);
 WriteLine($"{bob.Name} was born on {bob.DateOfBirth}");
 
